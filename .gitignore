@@ -1,0 +1,78 @@
+# FrontEnd
+
+# Compiled output
+FrontEnd/tupv/dist
+FrontEnd/tupv/tmp
+FrontEnd/tupv/out-tsc
+FrontEnd/tupv/bazel-out
+
+# Node
+FrontEnd/tupv/node_modules
+FrontEnd/tupv/npm-debug.log
+FrontEnd/tupv/yarn-error.log
+
+# IDEs and editors
+FrontEnd/tupv/.idea/
+FrontEnd/tupv/.project
+FrontEnd/tupv/.classpath
+FrontEnd/tupv/.c9/
+FrontEnd/tupv/*.launch
+FrontEnd/tupv/.settings/
+FrontEnd/tupv/*.sublime-workspace
+
+# Visual Studio Code
+FrontEnd/tupv/.vscode/*
+!FrontEnd/tupv/.vscode/settings.json
+!FrontEnd/tupv/.vscode/tasks.json
+!FrontEnd/tupv/.vscode/launch.json
+!FrontEnd/tupv/.vscode/extensions.json
+FrontEnd/tupv/.history/*
+
+# Miscellaneous
+FrontEnd/tupv/.angular/cache
+FrontEnd/tupv/.sass-cache/
+FrontEnd/tupv/connect.lock
+FrontEnd/tupv/coverage
+FrontEnd/tupv/libpeerconnection.log
+FrontEnd/tupv/testem.log
+FrontEnd/tupv/typings
+
+# System files
+FrontEnd/tupv/.DS_Store
+FrontEnd/tupv/Thumbs.db
+
+# Backend
+
+BackEnd/tupv/HELP.md
+BackEnd/tupv/target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+BackEnd/tupv/.apt_generated
+BackEnd/tupv/.classpath
+BackEnd/tupv/.factorypath
+BackEnd/tupv/.project
+BackEnd/tupv/.settings
+BackEnd/tupv/.springBeans
+BackEnd/tupv/.sts4-cache
+
+### IntelliJ IDEA ###
+BackEnd/tupv/.idea
+BackEnd/tupv/*.iws
+BackEnd/tupv/*.iml
+BackEnd/tupv/*.ipr
+
+### NetBeans ###
+BackEnd/tupv/nbproject/private/
+BackEnd/tupv/nbbuild/
+BackEnd/tupv/dist/
+BackEnd/tupv/nbdist/
+BackEnd/tupv/.nb-gradle/
+BackEnd/tupv/build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+BackEnd/tupv/.vscode/

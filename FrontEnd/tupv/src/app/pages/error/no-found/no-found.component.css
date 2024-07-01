@@ -1,0 +1,89 @@
+.contenedor__errorHttp {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(13, 17, 23);
+
+    .errorHttp__guia {
+        width: 90%;
+        height: 30%;
+        display: grid;
+        justify-items: center;
+    }
+
+    .errorHttp__regresar {
+        display: block;
+        align-content: center;
+        text-align: center;
+        background-color: red;
+        text-decoration: none;
+        font-size: 14pt;
+        color: white;
+        font-weight: bold;
+        margin-top: 10%;
+    }
+}
+
+@media (min-width: 300px) {
+    .contenedor__errorHttp {
+        .errorHttp__guia {
+            .errorHttp__h1 {
+                font-size: 28pt;
+            }
+
+            .errorHttp__p {
+                width: 80%;
+                text-align: justify;
+                font-size: 12pt;
+            }
+        }
+
+        .errorHttp__regresar {
+            width: 100px;
+            height: 40px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor__errorHttp {
+        .errorHttp__guia {
+            .errorHttp__h1 {
+                font-size: 48pt;
+            }
+
+            .errorHttp__p {
+                text-align: center;
+                font-size: 18pt;
+            }
+        }
+
+        .errorHttp__regresar {
+            width: 150px;
+            height: 60px;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .contenedor__errorHttp {
+        .errorHttp__guia {
+            .errorHttp__h1 {
+
+            }
+
+            .errorHttp__p {
+
+            }
+        }
+
+        .errorHttp__regresar {
+            width: 180px;
+            font-size: 16pt;
+        }
+    }
+}
