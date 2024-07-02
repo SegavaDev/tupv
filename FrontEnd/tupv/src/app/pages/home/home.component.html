@@ -1,3 +1,30 @@
-<div class="contenedor__vista">
+<div class="contenedor__home">
+    <app-nav-home></app-nav-home>
+    <div class="contenido">
+        <div class="contenido__slider">
+            @for(img of imagenes; track $index) {
+            <div class="imagen" (click)="mostrarZoomImg($index)">
+                <img src="{{img}}" alt="Imágen referencia"
+                    title="Click para visualizar en mayor tamaño">
+            </div>
+            }
+        </div>
+        <div class="contenido__presentacion">
+            <div class="marco__imgLogo">
+                <img src="logo_TuPV.png" alt>
+            </div>
+            <div class="marco__texto">
+                <p>
+                    Optimiza tu negocio con nuestra solución integral de Punto
+                    de Venta (POS) y Manejo de Inventario, diseñada para
+                    simplificar y mejorar cada aspecto de tus operaciones
+                    comerciales. Ideal para minoristas, restaurantes y cualquier
+                    empresa que busque eficiencia y control total sobre su
+                    inventario y ventas.
+                </p>
+            </div>
+            <a href="/login">Iniciar</a>
+        </div>
+    </div>
     <app-footer></app-footer>
 </div>

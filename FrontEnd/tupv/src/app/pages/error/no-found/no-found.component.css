@@ -25,6 +25,11 @@
         color: white;
         font-weight: bold;
         margin-top: 10%;
+        cursor: pointer;
+    }
+
+    .errorHttp__regresar:hover {
+        opacity: .8;
     }
 }
 

@@ -1,0 +1,120 @@
+.contenedor__home {
+    width: 100%;
+    min-width: 300px;
+    height: 100vh;
+    overflow: auto;
+    display: grid;
+
+    .contenido {
+        width: 100%;
+        height: calc(100vh - 100px);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        align-items: center;
+        justify-items: center;
+
+        .contenido__slider {
+            width: 100%;
+            height: 90%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 70% 30%;
+            align-items: center;
+            justify-items: center;
+
+            .imagen {
+                width: 96%;
+                height: 96%;
+                display: flex;
+                background-color: black;
+            }
+
+            .imagen:first-child {
+                width: 99%;
+                grid-column: 1 / 4;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                cursor: pointer;
+            }
+        }
+
+        .contenido__presentacion {
+            height: 90%;
+            min-height: 120px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 30% 40% auto;
+            align-items: center;
+            justify-items: center;
+
+            .marco__imgLogo {
+                width: 250px;
+                display: flex;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .marco__texto {
+                width: 90%;
+            }
+
+            a {
+                width: 120px;
+                height: 40px;
+                display: block;
+                align-content: center;
+                text-align: center;
+                text-decoration: none;
+                background-color: #3c5f6b;
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .contenedor__home {
+        .contenido {
+            grid-template-rows: 40% 60%;
+            grid-template-areas:
+                "contenido__presentacion"
+                "contenido__slider";
+
+            .contenido__slider {
+                grid-area: contenido__slider;
+            }
+
+            .contenido__presentacion {
+                grid-area: contenido__presentacion;
+                grid-template-rows: 50% 40% 10%;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .contenedor__home {
+        .contenido {
+            height: calc(100vh - 100px);
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-rows: 60% 40%;
+
+            .contenido__presentacion {
+                grid-template-rows: 30% 60% 10%;
+
+                .marco__imgLogo {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
